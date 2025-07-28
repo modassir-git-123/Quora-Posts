@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.post{
+    background-color: rgb(234, 214, 188);
+    color: black;
+    padding: 5px;
+    width:70%;
+    margin: auto;
+    border-radius: 8px;
+    
+    
+}
+h2{
+    color: rgb(190, 143, 85);
+    font-size: 35px;
+    margin-bottom: 20px;
+    left:50%;
+    transform: translate(-50%,0%);
+    position: absolute;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+.user{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 18px;
+     margin: 10px 0px;
+     border-bottom: 1px solid black;
+     line-height: 35px;
+}
+button{
+    background-color: rgb(42, 42, 255);
+    color:white;
+    font-size: 18px;
+    padding:3px 6px;
+    border-radius: 4px;
+    border:none;
+    border:1px solid rgb(249, 241, 230);
+    box-shadow: -4px -4px 10px white;
+    box-shadow: 4px 4px 10px rgb(67, 66, 66);
+
+}
+
+button:active{
+    box-shadow: 0px 0px 0px;
+}
+.post input{
+    padding:4px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgb(250, 248, 213);
+    outline:none;
+    border: none;
+}
+.post .content{
+    color: black;
+    font-size: 18px;
+    padding:4px 12px;
+    margin: 20px 0px 40px 0px;
+    border:1px solid black;
+    margin: auto;
+    width:90%;
+    margin-bottom: 40px;
+
+}
+a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: brown;
+    border:1px solid brown;
+    padding: 5px 8px;
+    border:1px solid antiquewhite;
+    box-shadow: -3px -3px 6px rgb(255, 255, 255);
+    box-shadow: 2px 2px 6px rgb(65, 65, 65);
+    border-radius: 4px;
+   
+
+}
+a:active{
+    box-shadow: 0px 0px 0px;
+}
+.delete{
+    background-color: red;
+    margin: 20px 0px;
+    padding: 3px 8px;
+    border:none;
+    border:1px solid antiquewhite;
+    box-shadow: -2px -2px 6px rgb(255, 255, 255);
+    box-shadow: 2px 2px 6px rgb(65, 65, 65);
+    border-radius: 4px;
+}
+.delete:hover{
+    cursor: pointer;
+}
+.delete:active{
+    box-shadow: 0px 0px 0px;
+}
+textarea{
+    font-size: 18px;
+    margin:20px;
+    outline: none;
+    
+}
+.cont{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.add{
+    text-align: center;
+    margin:40px 0px;
+}
+.add:active{
+    box-shadow: 0px 0px 0px;
+}
+.sub{
+    text-align: center;
+   
+}
+.see{
+    margin: 15px 0px;
+     
+}
+.post .userform{
+    left:30%;
+    margin-top: 20px;
+}
+.userform{
+    
+    text-align: center;
+}
+img{
+    width:70px;
+    margin:10px 0px 0px 10px;
+}
+.head{
+    display: flex;
+    align-items: center;
+}
+
+        @media only screen and(min-width:768px) {
+     body{
+      
+       background-color: aqua;
+       }    
+}
+

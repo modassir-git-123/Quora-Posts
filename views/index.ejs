@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora</title>
+    <link rel="stylesheet" href="/style.css">
+   
+</head>
+<body>
+    <div class="head"><div class="logo"><img src="/q.jpg"></div>
+    <h2>Quora Posts</h2>
+    </div>
+    <% for(post of posts){%>
+        <div class="post">
+    <h3 class="user">@<%=post.username%></h3>
+    
+    <div class="content"><%=post.content%></div>
+    <div class="see"><a href="http://localhost:8080/posts/<%=post.id%>">See More</a></div>
+    <div class="see">
+    <a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit</a>
+    </div>
+    <form method="post" action="/posts/<%=post.id%>?_method=DELETE"><button class="delete">Delete</button></form>
+    </div>
+    <br><br>
+
+    <%}%> 
+    <div class="add"><a href="http://localhost:8080/posts/new">Add new post</a>
+        </div>
+<style>
+        @media only screen and(max-width:768px) {
+     .post{
+       width:50%;
+       background-color: aqua;
+       }    
+}
+
+    </style>
+    
+</body>
+</html>
